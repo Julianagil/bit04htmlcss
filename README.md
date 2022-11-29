@@ -1,2 +1,6 @@
 # bit04htmlcss
-Repositorio para ramas, proyecto
+Proyecto sobre Walt Disney
+## Descripción
+Encontrarán la vida de Walt Disney y sus creaciones 
+### Autor
+Juliana Gil

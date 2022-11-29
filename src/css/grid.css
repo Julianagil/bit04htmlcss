@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ecf3b9;
+    
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.title h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.9em;
+    text-transform: uppercase;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container>.header, .container>.main, .container>.aside, .container>.footer, .container>div {
+    background: rgb(220, 236, 235);
+    padding: 20px;
+    border: 1px solid #15151e;
+}
+
+.container>.header, .container>.footer {
+    grid-column: 1/-1;
+    background-color: #71c1ff;
+    color: #ffffff;
+}
+
+.container>.main {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.main>.article {
+    background: #64a5e1;
+    padding: 20px;
+    margin-top: 5px;
+    color: #0f1314
+}
+
+.main .article h1,
+.main .article p {
+    padding: 10px;
+}
+
+.container>.aside {
+    grid-column: span 2;
+    grid-row: span 4;
+    background: #c6e0f9;
+    color: #1a1717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .aside img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.container>.another-post {
+    background: #023848;
+    color: #ffffff;
+    height: 180px;
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.container>.another-post:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #b4d5fb;
+}
+
+.img{
+    width:200px;
+    
+}
+.img2{
+    width:50px;
+}
+
+@media screen and (max-width: 768px) { 
+    .header {
+        text-align: center;
+    }
+    .container .main {
+        grid-column: 1 / -1;
+    }
+    .container .aside {
+        grid-column: 1 / 6;
+    }
+
+    .container .another-post {
+        grid-column: 1/-1;
+    }
+}
+@media screen and (max-width: 320px) { 
+    .header {
+        text-align: center;
+    }
+    .container .main {
+        grid-column: 1 / -1;
+    }
+    .container .aside {
+        grid-column: 1 / 6;
+    }
+
+    .container .another-post {
+        grid-column: 1/-1;
+    }
+}
